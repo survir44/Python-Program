@@ -1,0 +1,12 @@
+string=input("Enter A String:")
+f=open('abc.txt','a+')
+f.write("\n"+string)
+print("\nPosition Of Pointer After Writing")
+print(f.tell())
+f.seek(0,0)
+print("\nPosition Of Pointer Before Reading")
+print(f.tell())
+print("\nReading From File")
+print(f.read())
+
+f.close()

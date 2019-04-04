@@ -1,0 +1,7 @@
+string=input("Enter A String:")
+f=open('abc.txt','a+')
+f.write("\n"+string)
+f.seek(0,0)
+print("\nReading From File")
+print(f.read())
+f.close()
